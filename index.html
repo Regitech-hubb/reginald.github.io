@@ -146,6 +146,23 @@
   .blog-meta p { font-size: 0.82rem; color: var(--gray-text); line-height: 1.7; margin-bottom: 0.8rem; }
   .blog-date { font-size: 0.72rem; color: var(--gray-mid); }
 
+  #ai-videos { background: var(--off-white); }
+  .ai-platforms-strip { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 3rem; }
+  .platform-chip { background: var(--white); border: 1px solid var(--gray-light); border-left: 3px solid var(--accent); color: var(--navy); font-size: 0.82rem; font-weight: 600; padding: 0.5rem 1rem; border-radius: 2px; }
+  .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.8rem; }
+  .video-card { border: 1px solid var(--gray-light); border-radius: 4px; overflow: hidden; background: var(--white); transition: box-shadow 0.2s; }
+  .video-card:hover { box-shadow: 0 6px 24px rgba(10,22,40,0.08); }
+  .video-embed { position: relative; width: 100%; padding-top: 56.25%; background: var(--navy); overflow: hidden; }
+  .video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  .video-embed.video-placeholder { display: flex; align-items: center; justify-content: center; padding-top: 0; height: 180px; }
+  .video-placeholder-inner { text-align: center; color: var(--gray-mid); }
+  .video-placeholder-inner .plus { font-size: 1.8rem; color: var(--accent-light); line-height: 1; margin-bottom: 0.4rem; }
+  .video-placeholder-inner p { font-size: 0.78rem; letter-spacing: 0.04em; }
+  .video-meta { padding: 1.2rem 1.4rem; }
+  .video-platform-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem; }
+  .video-meta h3 { font-size: 0.92rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.4; }
+  .video-meta p { font-size: 0.8rem; color: var(--gray-text); line-height: 1.6; margin: 0; }
+
   #testimonials { background: var(--navy-mid); }
   #testimonials .section-title { color: var(--white); }
   #testimonials .section-eyebrow { color: var(--gold); }
@@ -195,6 +212,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#blog">Blog</a></li>
+    <li><a href="#ai-videos">AI Videos</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -264,7 +282,7 @@
       <div class="skill-group-icon">🤖</div>
       <h3>AI & Data Annotation</h3>
       <div class="skill-tags">
-        <span class="skill-tag">CrowdGen/Appen</span><span class="skill-tag">Outlier AI</span><span class="skill-tag">Remotasks</span><span class="skill-tag">Toloka</span><span class="skill-tag">Audio Transcription</span><span class="skill-tag">Data Labeling</span>
+        <span class="skill-tag">Atlas Capture</span><span class="skill-tag">Mindrift</span><span class="skill-tag">DataAnnotation.tech</span><span class="skill-tag">Alignerr</span><span class="skill-tag">Toloka</span><span class="skill-tag">TELUS Digital AI</span><span class="skill-tag">CrowdGen/Appen</span><span class="skill-tag">Outlier AI</span><span class="skill-tag">Remotasks</span><span class="skill-tag">Sovrano AI</span><span class="skill-tag">Audio Transcription</span><span class="skill-tag">Video Annotation</span><span class="skill-tag">Data Labeling</span>
       </div>
     </div>
     <div class="skill-group">
@@ -410,6 +428,155 @@
   </div>
 </section>
 
+<section id="ai-videos">
+  <div class="section-eyebrow">AI Training Platforms</div>
+  <div class="divider"></div>
+  <h2 class="section-title">AI Annotation Platforms &amp; Training Videos</h2>
+  <p class="section-sub">Platforms I have worked on or explored as a freelance AI data annotator, plus a video log documenting walkthroughs, onboarding, and task demos from each.</p>
+
+  <div class="ai-platforms-strip">
+    <span class="platform-chip">Atlas Capture</span>
+    <span class="platform-chip">Mindrift</span>
+    <span class="platform-chip">DataAnnotation.tech</span>
+    <span class="platform-chip">Alignerr</span>
+    <span class="platform-chip">Toloka</span>
+    <span class="platform-chip">TELUS Digital AI</span>
+    <span class="platform-chip">CrowdGen / Appen</span>
+    <span class="platform-chip">Outlier AI</span>
+    <span class="platform-chip">Remotasks</span>
+    <span class="platform-chip">Sovrano AI</span>
+  </div>
+
+  <div class="video-grid">
+    <!-- To add a video: replace the .video-placeholder div below with:
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    and fill in the platform tag, title, and description underneath. -->
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/a1MbcgMyhfY" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Atlas Capture</div>
+        <h3>Video annotation walkthrough</h3>
+        <p>Slot reserved for a demo of labeling/verifying work on Atlas Capture.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/zWUwrELPkrY" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Mindrift</div>
+        <h3>Platform overview</h3>
+        <p>Slot reserved for a Mindrift onboarding or task walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed video-placeholder">
+        <div class="video-placeholder-inner"><div class="plus">+</div><p>ADD VIDEO</p></div>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">DataAnnotation.tech</div>
+        <h3>Task demo</h3>
+        <p>Slot reserved for a DataAnnotation.tech task walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed video-placeholder">
+        <div class="video-placeholder-inner"><div class="plus">+</div><p>ADD VIDEO</p></div>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Alignerr</div>
+        <h3>Onboarding &amp; setup</h3>
+        <p>Slot reserved for an Alignerr onboarding or setup walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/Nrah53DN-Xs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">CrowdGen / Appen</div>
+        <h3>Getting started with AI annotation in Kenya</h3>
+        <p>Overview of Appen/CrowdGen, Outlier AI, and Remotasks — payouts and beginner expectations.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/o8lvwgV-zDA" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">CrowdGen / Appen</div>
+        <h3>Task demo</h3>
+        <p>Walkthrough of task work on CrowdGen/Appen.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed video-placeholder">
+        <div class="video-placeholder-inner"><div class="plus">+</div><p>ADD VIDEO</p></div>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Toloka</div>
+        <h3>Task demo</h3>
+        <p>Slot reserved for a Toloka task walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/YYLA0cUrgj8" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">TELUS Digital AI</div>
+        <h3>Assessment &amp; onboarding</h3>
+        <p>Slot reserved for a TELUS Digital AI walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed video-placeholder">
+        <div class="video-placeholder-inner"><div class="plus">+</div><p>ADD VIDEO</p></div>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Outlier AI</div>
+        <h3>Task demo</h3>
+        <p>Slot reserved for an Outlier AI task walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed video-placeholder">
+        <div class="video-placeholder-inner"><div class="plus">+</div><p>ADD VIDEO</p></div>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Remotasks</div>
+        <h3>Task demo</h3>
+        <p>Slot reserved for a Remotasks task walkthrough.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/odc2TP-Wvcw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="video-platform-tag">Sovrano AI</div>
+        <h3>Platform overview</h3>
+        <p>Walkthrough of working on Sovrano AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="testimonials">
   <div class="section-eyebrow">What Others Say</div>
   <div class="divider" style="background:var(--gold)"></div>
@@ -442,7 +609,7 @@
       <p>Whether you're looking for a collaborator on an ICT project, need someone for data annotation work, or simply want to connect — feel free to reach out.</p>
       <div class="contact-item"><div class="contact-item-icon">📍</div><div><h4>Location</h4><p>Rabuor, Kisumu, Kenya</p></div></div>
       <div class="contact-item"><div class="contact-item-icon">💼</div><div><h4>Freelance</h4><p>Available for AI annotation & ICT projects</p></div></div>
-      <div class="contact-item"><div class="contact-item-icon">📱</div><div><h4>Platform</h4><p>Active on Appen, Outlier AI, Toloka</p></div></div>
+      <div class="contact-item"><div class="contact-item-icon">📱</div><div><h4>Platform</h4><p>Active on Atlas Capture, Mindrift, DataAnnotation.tech, Alignerr, Toloka, TELUS Digital AI, Appen, Outlier AI, Sovrano AI</p></div></div>
       <div class="contact-item">
         <div class="contact-item-icon">💬</div>
         <div>
